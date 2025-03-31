@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ChaosLang - Unleash the Chaos</title>
+        <link rel="icon" href="img/logo.png" type="png">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&family=Russo+One&display=swap" rel="stylesheet">
+        <!-- Add Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <div class="logo-circle">
+                <img src="img/favicon.png" alt="logo" width="150px" height="150px">
+            </div>
+            <!-- <div class="logo">ChaosLang</div> -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#playground">Playground</a></li>
+            <li><a href="#tutorial">Tutorial</a></li>
+            <li><a href="#documentation">Docs</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        
+        <div class="glitch-wrapper">
+            <br>
+            
+            <p>Unlease the madness with</p>
+            <div class="glitch" data-glitch="ChaosLang">ChaosLang</div>
+            <br>
+            <p>Created to match the madness of Programmers</p>
+            <p>Made by ©AmAn SonwAni at CMxLabs</p>
+            <div class="get-started">
+                <a href="#playground" class="cta-btn">⇱ Try It Now</a>
+                <a href="#documentation" class="cta-btn">↗ Know More</a>
+                <a href="https://github.com/CyberMatic-AmAn/chaoslang" class="cta-btn">• View Source</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playground Section -->
+    <section id="playground" class="section">
+        <h2>Interactive Playground</h2>
+        <p>Test the chaos below</p>
+        <div class="editor-container">
+            <textarea id="code-input" rows="10" cols="50">
+// Example ChaosLang code                 
+kaboom main() {
+    glitch("Welcome to ChaosLang!");
+    crash x = 1 | 2 | 3;
+    glitch(x);
+    unleashchaos;
+    glitch(x);
+}
+            </textarea>
+            <div class="button-container">
+                <button id="run-btn">Run</button>
+                <button id="clear-btn">Clear</button>
+                <button id="load-btn">Load</button>
+                <button id="save-btn">Save</button>
+            </div>
+            <input type="file" id="file-input" style="display: none;">
+            <div id="output" class="output"></div>
+        </div>
+        <canvas id="chaos-canvas" width="800" height="600"></canvas>
+    </section>
+
+    <!-- Tutorial Section -->
+    <section id="tutorial" class="section">
+        <h2>Tutorial</h2>
+        <div class="tutorial-container">
+            <h3>Building Your First Chaos Program</h3>
+            <p>Let’s create a simple program with both Normal and Crazy Modes:</p>
+            <div class="code-block">
+                <div class="code-section">
+                    <h4>Code</h4>
+                    <pre><code>kaboom main() {
+    glitch("Starting...");
+    crash x = 10;
+    glitch(x);
+    unleashchaos;
+    glitch("Chaos unleashed!");
+    glitch(x); // Random tweak
+}
+<button class="copy-btn" data-code='kaboom main() {\n    glitch("Starting...");\n    crash x = 10;\n    glitch(x);\n    unleashchaos;\n    glitch("Chaos unleashed!");\n    glitch(x);\n}'>Copy to Playground</button></code></pre>
+                </div>
+                <div class="output-note-container">
+                    <div class="output-section">
+                        <h4>Output</h4>
+                        <p>Universe 0: Starting...<br>Universe 0: 10<br>Universe 0: Chaos unleashed!<br>Universe 0: 12 (example with random tweak)</p>
+                    </div>
+                    <div class="note-section">
+                        <h4>Note</h4>
+                        <p>Declare variables with <code>crash</code>, output with <code>glitch</code>, and switch to Crazy Mode with <code>unleashchaos</code>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="documentation" class="section">
+        <h2>Documentation</h2>
+        <div class="doc-container">
+            <div class="doc-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="doc-sidebar">
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#started">Getting Started</a></li>
+                    <li><a href="#syntax">Syntax & Features</a></li>
+                    <li><a href="#reference">Reference Guide</a></li>
+                    <li><a href="#examples-doc">Examples</a></li>
+                </ul>
+            </div>
+            <div class="doc-content">
+                <!-- 1. Introduction -->
+                <div id="intro">
+                    <h3>Introduction</h3>
+                    <p>ChaosLang is a programming language designed to blend structured programming with chaotic behavior. It operates in two distinct modes:</p>
+                    <ul>
+                        <li><strong>Normal Mode</strong>: Provides predictable execution for standard programming tasks.</li>
+                        <li><strong>Crazy Mode</strong>: Introduces chaotic behavior such as random number tweaks, array shuffling, and visual effects on a canvas.</li>
+                    </ul>
+                    <br>
+                    <!-- <p>ChaosLang is implemented in JavaScript and runs in the browser, offering an interactive playground to experiment with its features. This documentation provides a comprehensive guide to ChaosLang's syntax, features, and usage.</p> -->
+                </div>
+
+                <!-- 5. Reference Guide -->
+                <div id="reference">
+                    <h3>Reference Guide</h3>
+                    <h4>Keywords</h4>
+                    <ul class="keyword-list">
+                        <li><span class="keyword"><code>kaboom</code></span>: Defines a function.</li>
+                        <li><span class="keyword"><code>crash</code></span>: Declares a variable.</li>
+                        <li><span class="keyword"><code>glitch</code></span>: Prints output.</li>
+                        <li><span class="keyword"><code>if</code></span>: Conditional statement.</li>
+                        <li><span class="keyword"><code>return</code></span>: Returns a value from a function.</li>
+                        <li><span class="keyword"><code>meltdown</code></span>: While loop.</li>
+                        <li><span class="keyword"><code>explode</code></span>: Breaks out of loops or functions.</li>
+                        <li><span class="keyword"><code>chaosfor</code></span>: For loop with start, end, and step.</li>
+                        <li><span class="keyword"><code>chaosforeach</code></span>: For-each loop for arrays.</li>
+                        <li><span class="keyword"><code>in</code></span>: Used in <code>chaosforeach</code> loops.</li>
+                        <li><span class="keyword"><code>unleashchaos</code></span>: Activates Crazy Mode.</li>
+                        <li><span class="keyword"><code>mutate</code></span>: Redefines a function.</li>
+                        <li><span class="keyword"><code>chaoscall</code></span>: Randomly calls a function (Crazy Mode).</li>
+                        <li><span class="keyword"><code>rewind</code></span>: Reverts program state.</li>
+                        <li><span class="keyword"><code>corrupt</code></span>: Randomly modifies code (Crazy Mode).</li>
+                        <li><span class="keyword"><code>multiverse</code></span>: Runs in parallel universes (Crazy Mode).</li>
+                    </ul>
+                    <h4>Operators</h4>
+                    <ul>
+                        <li><strong>Arithmetic</strong>: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>, <code>^</code></li>
+                        <li><strong>Comparison</strong>: <code>></code>, <code><</code>, <code>=</code> (flipped in Crazy Mode)</li>
+                        <li><strong>Quantum</strong>: <code>|</code> (for quantum variables)</li>
+                    </ul>
+                    <h4>Array Methods</h4>
+                    <ul>
+                        <li><code>push(value)</code>: Adds a value to the end.</li>
+                        <li><code>pop()</code>: Removes and returns the last value.</li>
+                        <li><code>shift()</code>: Removes and returns the first value.</li>
+                        <li><code>unshift(value)</code>: Adds a value to the beginning.</li>
+                        <li><code>length</code>: Property to get the array length.</li>
+                    </ul>
+                    <br>
+                </div>
+
+                
+
+                <!-- 3. Getting Started -->
+                <div id="started">
+                    <h3>Getting Started</h3>
+                    <h4>Hello, ChaosLang!</h4>
+                    <p>Every ChaosLang program starts with a <code>main</code> function defined using the <code>kaboom</code> keyword.</p>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    glitch("Hello, ChaosLang!");
+}
+<button class="copy-btn" data-code='kaboom main() {\n    glitch("Hello, ChaosLang!");\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: Hello, ChaosLang!</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Simple output in Normal Mode.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Activating Crazy Mode</h4>
+                    <p>Use <code>unleashchaos</code> to enable Crazy Mode.</p>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    glitch("Starting in Normal Mode...");
+    unleashchaos;
+    glitch("Now in Crazy Mode!");
+}
+<button class="copy-btn" data-code='kaboom main() {\n    glitch("Starting in Normal Mode...");\n    unleashchaos;\n    glitch("Now in Crazy Mode!");\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: Starting in Normal Mode...<br>Universe 0: Now in Crazy Mode!</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Random shapes appear on the canvas in Crazy Mode.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Syntax & Features -->
+                <div id="syntax">
+                    <h3>Syntax & Features</h3>
+                    <h4>Variables</h4>
+                    <h5>Standard Variables</h5>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    crash x = 42;
+    glitch(x);
+}
+<button class="copy-btn" data-code='kaboom main() {\n    crash x = 42;\n    glitch(x);\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: 42</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Basic variable declaration.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5>Quantum Variables</h5>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    crash x = 1 | 2 | 3;
+    glitch(x);
+    glitch(x);
+}
+<button class="copy-btn" data-code='kaboom main() {\n    crash x = 1 | 2 | 3;\n    glitch(x);\n    glitch(x);\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: 2<br>Universe 0: 3 (example)</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Random value chosen each access.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Output</h4>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    glitch("Chaos is here!");
+    crash x = 10;
+    glitch(x);
+}
+<button class="copy-btn" data-code='kaboom main() {\n    glitch("Chaos is here!");\n    crash x = 10;\n    glitch(x);\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: Chaos is here!<br>Universe 0: 10</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Prints strings or variables.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Functions</h4>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom add(a, b) {
+    return a + b;
+}
+
+kaboom main() {
+    crash result = add(5, 3);
+    glitch(result);
+}
+<button class="copy-btn" data-code='kaboom add(a, b) {\n    return a + b;\n}\n\nkaboom main() {\n    crash result = add(5, 3);\n    glitch(result);\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: 8</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Functions with parameters and return.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Operators</h4>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    crash x = 5 + 3 * 2;
+    glitch(x);
+    
+}
+<button class="copy-btn" data-code='kaboom main() {\n    crash x = 5 + 3 * 2;\n    glitch(x);\n    crash y = 10 > 5;\n    glitch(y);\n    unleashchaos;\n    crash z = 10 > 5;\n    glitch(z);\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: 11<br>Universe 0: true<br>Universe 0: false</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Comparison flips in Crazy Mode.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Conditionals</h4>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    crash x = 10;
+    if (x > 5) {
+        glitch("x is greater than 5");
+    }
+}
+<button class="copy-btn" data-code='kaboom main() {\n    crash x = 10;\n    if (x > 5) {\n        glitch("x is greater than 5");\n    }\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: x is greater than 5</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Basic conditional logic.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Loops</h4>
+                    <h5><code>chaosfor</code> Loop</h5>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    chaosfor (i = 0; 5; 1) {
+        glitch(i);
+    }
+}
+<button class="copy-btn" data-code='kaboom main() {\n    chaosfor (i = 0; 5; 1) {\n        glitch(i);\n    }\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: 0<br>Universe 0: 1<br>Universe 0: 2<br>Universe 0: 3<br>Universe 0: 4</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Iterates with step value.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5><code>chaosforeach</code> Loop</h5>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    crash arr = [1, 2, 3];
+    chaosforeach (item in arr) {
+        glitch(item);
+    }
+}
+<button class="copy-btn" data-code='kaboom main() {\n    crash arr = [1, 2, 3];\n    chaosforeach (item in arr) {\n        glitch(item);\n    }\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: 1<br>Universe 0: 2<br>Universe 0: 3</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Iterates over arrays.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5><code>meltdown</code> Loop</h5>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    crash x = 0;
+    meltdown (x < 3) {
+        glitch(x);
+        crash x = x + 1;
+    }
+}
+<button class="copy-btn" data-code='kaboom main() {\n    crash x = 0;\n    meltdown (x < 3) {\n        glitch(x);\n        crash x = x + 1;\n    }\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: 0<br>Universe 0: 1<br>Universe 0: 2</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>While loop equivalent.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Arrays</h4>
+                    <h5>Array Declaration and Access</h5>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    crash arr = [10, 20, 30];
+    glitch(arr[1]);
+}
+<button class="copy-btn" data-code='kaboom main() {\n    crash arr = [10, 20, 30];\n    glitch(arr[1]);\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: 20</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Access elements with indices.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5>Array Methods</h5>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    crash arr = [1, 2];
+    arr.push(3);
+    glitch(arr);
+    crash popped = arr.pop();
+    glitch(popped);
+}
+<button class="copy-btn" data-code='kaboom main() {\n    crash arr = [1, 2];\n    arr.push(3);\n    glitch(arr);\n    crash popped = arr.pop();\n    glitch(popped);\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: [1, 2, 3]<br>Universe 0: 3</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Modify arrays with methods.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5>Array Properties</h5>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    crash arr = [1, 2, 3];
+    glitch(arr.length);
+}
+<button class="copy-btn" data-code='kaboom main() {\n    crash arr = [1, 2, 3];\n    glitch(arr.length);\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: 3</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Get array length.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Crazy Mode Features</h4>
+                    <h5><code>unleashchaos</code></h5>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    crash x = 5;
+    glitch(x);
+    unleashchaos;
+    glitch(x);
+}
+<button class="copy-btn" data-code='kaboom main() {\n    crash x = 5;\n    glitch(x);\n    unleashchaos;\n    glitch(x);\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: 5<br>Universe 0: 7 (example)</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Tweaks numbers and shuffles arrays.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5><code>chaoscall</code></h5>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom sayHello() {
+    glitch("Hello!");
+}
+
+kaboom main() {
+    unleashchaos;
+    chaoscall;
+}
+<button class="copy-btn" data-code='kaboom sayHello() {\n    glitch("Hello!");\n}\n\nkaboom main() {\n    unleashchaos;\n    chaoscall;\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: Hello! (if chosen)</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Random function call in Crazy Mode.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5><code>corrupt</code></h5>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    crash x = 5 + 3;
+    glitch(x);
+    unleashchaos;
+    corrupt;
+}
+<button class="copy-btn" data-code='kaboom main() {\n    crash x = 5 + 3;\n    glitch(x);\n    unleashchaos;\n    corrupt;\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: 8<br>Code corrupted!<br>Universe 0: 53 (example)</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Randomly modifies code.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5><code>multiverse</code></h5>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    crash x = 5;
+    unleashchaos;
+    multiverse;
+    glitch(x);
+}
+<button class="copy-btn" data-code='kaboom main() {\n    crash x = 5;\n    unleashchaos;\n    multiverse;\n    glitch(x);\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 1: 3<br>Universe 2: 7 (example)</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Runs in parallel universes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Function Mutation</h4>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom greet() {
+    glitch("Hello!");
+}
+
+kaboom main() {
+    greet();
+    mutate greet() = {
+        glitch("Hi!");
+    };
+    greet();
+}
+<button class="copy-btn" data-code='kaboom greet() {\n    glitch("Hello!");\n}\n\nkaboom main() {\n    greet();\n    mutate greet() = {\n        glitch("Hi!");\n    };\n    greet();\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: Hello!<br>Universe 0: Hi!</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Redefines a function.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Control Flow</h4>
+                    <h5><code>explode</code></h5>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    chaosfor (i = 0; 5; 1) {
+        glitch(i);
+        if (i = 2) {
+            explode;
+        }
+    }
+}
+<button class="copy-btn" data-code='kaboom main() {\n    chaosfor (i = 0; 5; 1) {\n        glitch(i);\n        if (i = 2) {\n            explode;\n        }\n    }\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: 0<br>Universe 0: 1<br>Universe 0: 2</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Breaks out of loops.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5><code>return</code></h5>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom square(x) {
+    return x * x;
+}
+
+kaboom main() {
+    crash result = square(4);
+    glitch(result);
+}
+<button class="copy-btn" data-code='kaboom square(x) {\n    return x * x;\n}\n\nkaboom main() {\n    crash result = square(4);\n    glitch(result);\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: 16</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Returns a value.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Error Handling</h4>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    panic("Something went wrong!");
+}
+<button class="copy-btn" data-code='kaboom main() {\n    panic("Something went wrong!");\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Chaos unleashed: Something went wrong! at line 2</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Throws an error.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Time Travel</h4>
+                    <div class="code-block">
+                        <div class="code-section">
+                            <h4>Code</h4>
+                            <pre><code>kaboom main() {
+    crash x = 1;
+    glitch(x);
+    crash x = 2;
+    glitch(x);
+    rewind 1;
+}
+<button class="copy-btn" data-code='kaboom main() {\n    crash x = 1;\n    glitch(x);\n    crash x = 2;\n    glitch(x);\n    rewind 1;\n}'>Copy to Playground</button></code></pre>
+                        </div>
+                        <div class="output-note-container">
+                            <div class="output-section">
+                                <h4>Output</h4>
+                                <p>Universe 0: 1<br>Universe 0: 2<br>Universe 0: 1</p>
+                            </div>
+                            <div class="note-section">
+                                <h4>Note</h4>
+                                <p>Reverts state by steps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="examples" class="section">
+        <h2>Examples</h2>
+        <div class="examples-container">
+            <div class="example">
+                <h3>Fibonacci</h3>
+                <div class="code-block">
+                    <div class="code-section">
+                        <h4>Code</h4>
+                        <pre><code>kaboom fibonacci(n) {
+crash a = 0;
+crash b = 1;
+chaosfor (i = 0; n; 1) {
+    glitch(a);
+    crash temp = a + b;
+    crash a = b;
+    crash b = temp;
+}
+}
+
+kaboom main() {
+    fibonacci(6);
+}
+<button class="copy-btn" data-code='kaboom fibonacci(n) {\n    crash a = 0;\n    crash b = 1;\n    chaosfor (i = 0; n; 1) {\n        glitch(a);\n        crash temp = a + b;\n        crash a = b;\n        crash b = temp;\n    }\n}\n\nkaboom main() {\n    fibonacci(6);\n}'>Copy to Playground</button></code></pre>
+                    </div>
+                    <div class="output-note-container">
+                        <div class="output-section">
+                            <h4>Output</h4>
+                            <p>Universe 0: 0</p>
+                            <p>Universe 0: 1</p>
+                            <p>Universe 0: 1</p>
+                            <p>Universe 0: 2</p>
+                            <p>Universe 0: 3</p>
+                            <p>Universe 0: 5</p>
+                        </div>
+                        <div class="note-section">
+                            <h4>Note</h4>
+                            <p>Fibonacci series generation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <h3>Crazy Array Shuffle</h3>
+                <div class="code-block">
+                    <div class="code-section">
+                        <h4>Code</h4>
+                        <pre><code>kaboom main() {
+    crash arr = [1, 2, 3];
+    glitch(arr);
+    unleashchaos;
+    glitch(arr); // Shuffled!
+}
+<button class="copy-btn" data-code='kaboom main() {\n    crash arr = [1, 2, 3];\n    glitch(arr);\n    unleashchaos;\n    glitch(arr);\n}'>Copy to Playground</button></code></pre>
+                    </div>
+                    <div class="output-note-container">
+                        <div class="output-section">
+                            <h4>Output</h4>
+                            <p>Universe 0: [1, 2, 3]<br>Universe 0: [3, 1, 2] (example)</p>
+                        </div>
+                        <div class="note-section">
+                            <h4>Note</h4>
+                            <p>Array shuffling in Crazy Mode.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <h3>DiceRoll with Quantum VARs</h3>
+                <div class="code-block">
+                    <div class="code-section">
+                        <h4>Code</h4>
+                        <pre><code>kaboom rollDice() {
+    crash roll = 1 | 2 | 3 | 4 | 5 | 6;
+    glitch("You rolled a " + roll + "!");
+}
+
+kaboom main() {
+    rollDice();
+    rollDice();
+}
+<button class="copy-btn" data-code='kaboom rollDice() {\n    crash roll = 1 | 2 | 3 | 4 | 5 | 6;\n    glitch("You rolled a " + roll + "!");\n}\n\nkaboom main() {\n    rollDice();\n    rollDice();\n}'>Copy to Playground</button></code></pre>
+                    </div>
+                    <div class="output-note-container">
+                        <div class="output-section">
+                            <h4>Output</h4>
+                            <p>Universe 0: You rolled a 2!<br>Universe 0: You rolled a 3!</p>
+                        </div>
+                        <div class="note-section">
+                            <h4>Note</h4>
+                            <p>Rolling Dice via Quantum Variables.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <p>For inquiries, reach out to me at</p>
+            <div class="contact-logo">
+                <a href="https://github.com/CyberMatic-AmAn">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:exehyper999@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aman-sonwani-a95b0a326/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/OperatorLinux">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>⫷ ChaosLang - 2025 ⫘⫘⫘⫘ Made by ©AmAn SonwAni at CMxLabs ⫸</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="chaoslang.js"></script>
+    <script type="module" src="copyToPlayground.js"></script>
+    <script type="module">
+        import { tokenize, parse, interpret } from './chaoslang.js';
+        document.getElementById("run-btn").addEventListener("click", () => {
+            const codeInput = document.getElementById("code-input");
+            const code = codeInput.value;
+            const tokens = tokenize(code);
+            const ast = parse(tokens);
+            interpret(ast, code);
+        });
+        document.getElementById("clear-btn").addEventListener("click", () => {
+            document.getElementById("output").innerHTML = "";
+            const canvas = document.getElementById("chaos-canvas");
+            const ctx = canvas.getContext("2d");
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            document.body.classList.remove("crazy-mode");
+        });
+        document.getElementById("load-btn").addEventListener("click", () => {
+            document.getElementById("file-input").click();
+        });
+        document.getElementById("file-input").addEventListener("change", (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const codeInput = document.getElementById("code-input");
+                    codeInput.value = e.target.result;
+                };
+                reader.readAsText(file);
+            }
+        });
+        document.getElementById("save-btn").addEventListener("click", () => {
+            const codeInput = document.getElementById("code-input");
+            const code = codeInput.value;
+            const blob = new Blob([code], { type: "text/plain;charset=utf-8" });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "chaoslang.chaos";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+    <script>
+        // Hamburger menu toggle
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.hamburger').classList.toggle('open');
+        });
+    </script>
+    <script>
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default anchor behavior
+                const targetId = this.getAttribute('href'); // Get the href (e.g., "#home")
+                const targetElement = document.querySelector(targetId); // Find the target section
+                const navbarHeight = document.querySelector('.navbar').offsetHeight; // Get navbar height
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight; // Calculate position
+    
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth' // Smooth scroll to the section
+                });
+            });
+        });
+    </script>
+    <script>
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+    
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script>
+        // Hamburger menu toggle for navbar
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.hamburger').classList.toggle('open');
+        });
+
+        // Hamburger menu toggle for doc-sidebar
+        document.querySelector('.doc-hamburger').addEventListener('click', () => {
+            document.querySelector('.doc-sidebar').classList.toggle('active');
+            document.querySelector('.doc-hamburger').classList.toggle('open');
+        });
+
+        // Close doc-sidebar when clicking a link (optional)
+        document.querySelectorAll('.doc-sidebar a').forEach(anchor => {
+            anchor.addEventListener('click', () => {
+                document.querySelector('.doc-sidebar').classList.remove('active');
+                document.querySelector('.doc-hamburger').classList.remove('open');
+            });
+        });
+    </script>
+    <script src="animations.js"></script>
+</body>
+</html>
