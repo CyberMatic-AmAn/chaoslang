@@ -1,8 +1,8 @@
-# ChaosLang
+#🤪 ChaosLang 💥💥
 
 ChaosLang is an experimental programming language built in JavaScript that thrives on unpredictability and chaos. Designed to break free from the rigidity of traditional programming, ChaosLang introduces randomness, quantum-inspired expressions, and dynamic code manipulation. It runs in a browser, leveraging an HTML canvas for chaotic visual effects and a text output for results, making it a playful yet powerful tool for exploring entropy in coding.
 
-## Features
+## Features 😎
 
 - Unique chaotic keywords for programming constructs and actions.
 - Quantum expressions allowing multiple possible values for variables.
@@ -11,7 +11,7 @@ ChaosLang is an experimental programming language built in JavaScript that thriv
 - Visual chaos rendering on a canvas for an immersive experience.
 - History tracking with rewind capabilities.
 
-## Documentation
+## Documentation 📄
 
 ### Keywords and Their Uses
 
@@ -45,13 +45,15 @@ ChaosLang is an experimental programming language built in JavaScript that thriv
 Here’s a basic ChaosLang program to print "Hello, World!":
 
 ```
-crash message = "Hello, World!";
-glitch(message);
+kaboom main() {
+    crash message = "Hello, World!";
+    glitch(message);
+}
 ```
 
 This declares a variable `message` with the string "Hello, World!" and outputs it using `glitch`.
 
-## Crazy Mode
+## Crazy Mode 🤪
 
 Crazy mode is ChaosLang’s signature feature, turning predictable execution into a chaotic playground. Activate it with the `unleashchaos;` statement. Once enabled:
 - Arithmetic operators (e.g., `+` might become `-`) and comparisons (e.g., `<` might become `>`) behave unpredictably.
@@ -67,13 +69,15 @@ Crazy mode is ChaosLang’s signature feature, turning predictable execution int
 
 Example with Crazy Mode:
 ```
-unleashchaos;
-crash x = 5;
-glitch(x + 3);
+kaboom main() {
+    unleashchaos;
+    crash x = 5;
+    glitch(x + 3);
+}
 ```
 Here, `x + 3` might output anything from `2` to `13` (or more), with random shapes on the canvas.
 
-## Project Structure
+## Project Structure 📽️
 
 ```
 chaoslang/
@@ -87,3 +91,4 @@ chaoslang/
     ├── (image files)
 ```
 
+##ℹ️ Note : This language is developed by AmAn at CMxLabs and is in it`s early stages we are working to make this match the madness of programmers. 
