@@ -1,4 +1,4 @@
-#🤪 ChaosLang 💥💥
+# 🤪 ChaosLang 💥💥
 
 ChaosLang is an experimental programming language built in JavaScript that thrives on unpredictability and chaos. Designed to break free from the rigidity of traditional programming, ChaosLang introduces randomness, quantum-inspired expressions, and dynamic code manipulation. It runs in a browser, leveraging an HTML canvas for chaotic visual effects and a text output for results, making it a playful yet powerful tool for exploring entropy in coding.
 
@@ -91,4 +91,4 @@ chaoslang/
     ├── (image files)
 ```
 
-##ℹ️ Note : This language is developed by AmAn at CMxLabs and is in it`s early stages we are working to make this match the madness of programmers. 
+## ℹ️ Note : This language is developed by AmAn at CMxLabs and is in it`s early stages we are working to make this match the madness of programmers. 
