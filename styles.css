@@ -86,10 +86,17 @@ body {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
+.port{
+    text-decoration: none;
+    color: #ff0000;
+}
+
 .get-started {
     display: flex;
     gap: 20px;
+    padding-top: 10px;
 }
+
 
 /* Hero Section */
 .hero {
